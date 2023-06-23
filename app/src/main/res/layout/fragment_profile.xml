@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity"
+    android:background="#2D2D2D"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_linear_gradient"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="Account"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/placeholder_image_account" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/nameLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Name"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/dm_sans"/>
+
+        <EditText
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_selector"
+            android:drawableEnd="@drawable/edit_icon"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="User1231321"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/dm_sans"/>
+
+        <TextView
+            android:id="@+id/emaillbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Email"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/dm_sans"/>
+        <EditText
+            android:id="@+id/emailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_selector"
+            android:drawableEnd="@drawable/edit_icon"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="user@email.com"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/dm_sans"/>
+
+        <TextView
+            android:id="@+id/phoneLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Phone Number"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/dm_sans"/>
+        <EditText
+            android:id="@+id/phoneTxt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_selector"
+            android:drawableEnd="@drawable/edit_icon"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="+62 XXX XXXX XXX"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/dm_sans"/>
+
+        <TextView
+            android:id="@+id/dobLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Date of Birth"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/dm_sans"/>
+        <EditText
+            android:id="@+id/dobTxt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_selector"
+            android:drawableEnd="@drawable/edit_icon"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="XX / XX / XXXX"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/dm_sans"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Change Password"
+            android:background="@drawable/rounded_edittext_bar2"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/dm_sans"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Log Out"
+            android:background="@drawable/rounded_edittext_bar_selected_red"
+            android:textAllCaps="false"
+            android:textColor="#FF5141"
+            android:textStyle="bold"
+            android:fontFamily="@font/dm_sans"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#2D2D2D"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/welcomeLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dm_sans"
+        android:textStyle="bold"
+        android:text="Welcome Back!"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/subtitleLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dm_sans"
+        android:text="Sign in to continue"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="15dp"
+        android:layout_marginBottom="60dp"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_selector"
+        android:ems="10"
+        android:fontFamily="@font/dm_sans"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#CCFFFFFF"
+        android:textSize="15dp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_selector"
+        android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+        android:ems="10"
+        android:fontFamily="@font/dm_sans"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#CCFFFFFF"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/forgotPassLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dm_sans"
+        android:text="Forgot Password?"
+        android:textColor="#CCFFFFFF"
+        android:textSize="13dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button_lblue"
+        android:fontFamily="@font/dm_sans"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/alreadyLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans"
+            android:text="Don't have an account?"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/regisHereLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans"
+            android:text="Register Here"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
